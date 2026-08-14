@@ -26,10 +26,7 @@ Marcados con `TODO` en `src/content.js`:
 - Fecha aproximada exacta de las giras internacionales.
 - Confirmar en un teléfono real que el link de WhatsApp (`wa.me/5493515135478`) abre el chat correcto antes de publicar.
 
-### Foto/video de fondo del Hero
-El Hero usa hoy un fondo 100% CSS (degradé cálido + formas orgánicas animadas), sin depender de ningún archivo. Si más adelante quieren reemplazarlo por una foto o video real de la banda tocando en vivo, hay dos opciones simples:
-- Agregar el archivo en `public/media/hero-bg.jpg` (o `.mp4`) y ajustar `src/components/sections/Hero.jsx` para renderizarlo por encima del degradé actual (dejarlo como fallback si el archivo no carga).
-
 ### Assets ya incluidos
 - `src/assets/logo.jpg` — isotipo de la banda, usado como insignia (círculo oscuro) en el nav y el footer, y como favicon.
 - `src/assets/integrantes.png` — foto grupal real de los 4 integrantes, usada en la sección "La Banda".
+- `src/assets/bi2.png` — foto en vivo de la banda, usada como fondo del Hero (con una superposición degradé cálida encima para que el texto se lea bien). Para cambiarla por otra foto o video, reemplazar el import en `src/components/sections/Hero.jsx`.
