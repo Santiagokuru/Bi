@@ -25,7 +25,11 @@ export default function Nav() {
           className="flex items-center gap-3 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
         >
           <Badge size="sm" />
-          <span className="font-serif text-lg font-medium text-ink">
+          <span
+            className={`font-serif text-lg font-medium transition-colors duration-300 ${
+              scrolled ? 'text-ink' : 'text-cream'
+            }`}
+          >
             {site.name}
           </span>
         </a>
@@ -38,7 +42,11 @@ export default function Nav() {
             <a
               key={item.href}
               href={item.href}
-              className="font-sans text-sm font-medium text-ink-soft transition-colors hover:text-terracotta-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded"
+              className={`font-sans text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded ${
+                scrolled
+                  ? 'text-ink-soft hover:text-terracotta-dark'
+                  : 'text-cream/85 hover:text-cream'
+              }`}
             >
               {item.label}
             </a>
@@ -50,7 +58,7 @@ export default function Nav() {
         </Button>
         <Button
           href={hero.ctaHref}
-          variant="ghost"
+          variant={scrolled ? 'ghost' : 'outlineLight'}
           className="hidden md:inline-flex"
         >
           {hero.ctaLabel}
