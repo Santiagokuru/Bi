@@ -1,0 +1,32 @@
+@import '@fontsource-variable/fraunces/standard.css';
+@import '@fontsource-variable/fraunces/standard-italic.css';
+@import '@fontsource/work-sans/400.css';
+@import '@fontsource/work-sans/500.css';
+@import '@fontsource/work-sans/600.css';
+@import '@fontsource/work-sans/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  @apply bg-cream text-ink font-sans antialiased;
+}
+
+::selection {
+  @apply bg-ochre/40 text-ink;
+}
+
+.skip-link {
+  @apply absolute left-4 top-4 -translate-y-24 focus:translate-y-0 transition-transform duration-200 bg-brown text-cream px-4 py-2 rounded-full z-50 font-medium;
+}
