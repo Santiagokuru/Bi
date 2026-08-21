@@ -18,15 +18,15 @@ npm run preview
 
 ## Contenido y assets
 
-Toda la copy, links y datos estructurados (bio, integrantes, trayectoria, Spotify, contacto) viven en un solo archivo: `src/content.js`. Para editar textos o links, modificar ahí — no hace falta tocar los componentes.
+Toda la copy, links y datos estructurados (bio, shows, prensa, contenido audiovisual, contacto) viven en un solo archivo: `src/content.js`. Para editar textos o links, modificar ahí — no hace falta tocar los componentes.
 
 ### Pendientes a confirmar con la banda
 Marcados con `TODO` en `src/content.js`:
 - Instrumento/rol específico de cada integrante.
-- Fecha aproximada exacta de las giras internacionales.
+- Fotos reales para la sección "Galería" (hoy usa placeholders de `src/assets`).
 - Confirmar en un teléfono real que el link de WhatsApp (`wa.me/5493515135478`) abre el chat correcto antes de publicar.
 
 ### Assets ya incluidos
 - `src/assets/logo.jpg` — isotipo de la banda, usado como insignia (círculo oscuro) en el nav y el footer, y como favicon.
-- `src/assets/integrantes.png` — foto grupal real de los 4 integrantes, usada en la sección "La Banda".
+- `src/assets/integrantes.png` — foto grupal real de los 4 integrantes, usada en la sección "Shows 2026".
 - `src/assets/bi2.png` — foto en vivo de la banda, usada como fondo del Hero (con una superposición degradé cálida encima para que el texto se lea bien). Para cambiarla por otra foto o video, reemplazar el import en `src/components/sections/Hero.jsx`.

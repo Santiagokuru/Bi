@@ -3,8 +3,9 @@ import Footer from '../components/layout/Footer.jsx'
 import Hero from '../components/sections/Hero.jsx'
 import Bio from '../components/sections/Bio.jsx'
 import Band from '../components/sections/Band.jsx'
-import Timeline from '../components/sections/Timeline.jsx'
-import SpotifyPlayer from '../components/sections/SpotifyPlayer.jsx'
+import Press from '../components/sections/Press.jsx'
+import Audiovisual from '../components/sections/Audiovisual.jsx'
+import Gallery from '../components/sections/Gallery.jsx'
 
 export default function HomePage() {
   return (
@@ -17,8 +18,9 @@ export default function HomePage() {
         <Hero />
         <Bio />
         <Band />
-        <Timeline />
-        <SpotifyPlayer />
+        <Press />
+        <Audiovisual />
+        <Gallery />
       </main>
       <Footer />
     </>

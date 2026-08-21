@@ -6,92 +6,105 @@ export const site = {
 
 export const nav = [
   { label: 'Nosotros', href: '#nosotros' },
-  { label: 'La Banda', href: '#banda' },
-  { label: 'Trayectoria', href: '#trayectoria' },
-  { label: 'Música', href: '#musica' },
+  { label: 'Shows 2026', href: '#shows' },
+  { label: 'Prensa', href: '#prensa' },
+  { label: 'Contenido audiovisual', href: '#audiovisual' },
+  { label: 'Galería', href: '#galeria' },
   { label: 'Contacto', href: '#contacto' },
 ]
 
 export const hero = {
-  eyebrow: 'Jazz contemporáneo · "Casi Jazz"',
-  headline: 'Sencillez melódica, espíritu fraterno.',
+  eyebrow: 'Nuevo álbum',
+  headline: 'Relatos del Futuro',
   subhead:
-    'BI es el proyecto de los hermanos Ravasi: composiciones propias, frescas, nacidas de la alegría del encuentro y el placer de compartir.',
+    'Siete canciones que capturan al cuarteto en uno de sus momentos más creativos y expresivos.',
   ctaLabel: 'Escuchar música',
-  ctaHref: '#musica',
+  ctaHref: '#audiovisual',
+  coverAlt: 'Arte de tapa de "Relatos del Futuro", el nuevo álbum de BI',
 }
 
 export const bio = {
   heading: 'Nosotros',
   paragraphs: [
-    'BI es un proyecto de música original liderado por los hermanos Agustín y Horacio Ravasi. Desde el 2020 han coincidido nuevamente para formar BI, un proyecto musical nuevo con composiciones propias y frescas, donde se refleja la comunicación entre hermanos y la profesión.',
-    'Gestados desde la alegría del encuentro fraterno y el placer de compartir, su propuesta destaca por la sencillez y claridad a nivel melódico en conjunción con ritmos y conceptos musicales de diversas índoles, derivados en una música autodenominada irónicamente como "casi jazz".',
+    'BI es un proyecto musical original liderado por los hermanos Horacio y Agustín Ravasi, junto a André Maurel en batería e Ismael Avecilla en saxofones.',
+    'Gestado desde la alegría del encuentro fraterno y el placer de compartir, predominan en su música la sencillez y claridad a nivel melódico en conjunción con ritmos y conceptos musicales que encuentran sus raíces en múltiples y variados estilos. La conjunción de estas influencias derivan en una música auto-denominada irónicamente por sus autores como Casi Jazz.',
+    'Desde su primer trabajo fonográfico lanzado en 2022 (Al menos hoy) han mantenido una intensa actividad artística, destacando su participación en festivales de jazz a lo largo y ancho del país, así como en festivales internacionales en Chile; Uruguay y Grecia.'
   ],
 }
 
-// TODO (confirmar con la banda): instrumento/rol específico de cada integrante.
 export const band = {
-  heading: 'La Banda',
-  intro: 'El cuarteto que le da forma a BI en vivo.',
+  heading: 'Shows 2026',
+  intro: 'Estos son los lugares donde nos presentaremos durante el 2026. Esperamos verte por ahí. (definir mensaje)',
   photoAlt:
     'Agustín Ravasi, Horacio Ravasi, Ismael Avecilla y André Maurel, integrantes de BI, retrato grupal.',
-  members: [
-    { name: 'Agustín Ravasi', role: 'Fundador' },
-    { name: 'Horacio Ravasi', role: 'Fundador' },
-    { name: 'Ismael Avecilla', role: 'Integrante' },
-    { name: 'André Maurel', role: 'Integrante' },
+  shows: [
+    { date: '7/1', place: 'Club de jazz Santiago de Chile' },
+    { date: '8/1', place: 'Estrella Negra Club de Jazz Valparaiso - Chile' },
+    { date: '9/1', place: 'Aconcagua Hostel - La Ligua Chile' },
+    { date: '10/1', place: 'Festival de Jazz de Tongoy - Chile' },
+    { date: '17/1', place: 'Festival de Jazz La Cumbre Córdoba' },
+    { date: '13/2', place: 'Festival de Jazz San Javier - Córdoba' },
+    { date: '20/2', place: 'San Felipa Gualeguaychú - Entre Ríos' },
+    { date: '21/2', place: 'Festival de Jazz Colonia Valdense - Uruguay' },
+    { date: '1/5', place: 'Jazz Day Villa Giardino - Córdoba' },
+    { date: '15/5', place: 'La Piojera - Córdoba' },
+    { date: '17/5', place: 'Festival de Jazz de Rio Ceballos - Cordoba' },
+    { date: '17/6', place: 'Festival de Jazz Alta Gracia - Córdoba' },
+    { date: '19/7', place: 'Noche de Jazz - Villa Ciudad Parque - Córdoba' },
+    { date: '9/8', place: 'Groovin Jazz Club - Rosario' },
+    { date: '3/10', place: 'Platz - Presentación Disco Relatos del Futuro' },
+    { date: '10/10', place: 'Casa Finzi - Valle Hermoso' },
+    { date: '6/11', place: 'Mendoza' },
+    { date: '7/11', place: 'Teatro Bicentenario - San Juan' },
+    { date: '13/11', place: 'Centro Cultural Nuevo Uriarte - Buenos Aires' },
+    { date: '15/11', place: 'Ciclo de Jazz de Tigre' },
   ],
 }
 
-// TODO (confirmar con la banda): fecha aproximada de las giras internacionales.
-export const timeline = {
-  heading: 'Trayectoria',
-  intro: 'Discografía e hitos del proyecto.',
+export const press = {
+  heading: 'Prensa',
+  intro: 'Lo que dicen de nosotros. Hacé click en un recorte para leer la nota completa.',
   items: [
     {
-      date: 'Junio 2022',
-      title: '"Al menos hoy"',
-      description: 'Lanzamiento del primer material fonográfico de BI.',
+      quote:
+        '...tras una larga experiencia que los llevó por España, Francia, Alemania, Países Bajos, Luxemburgo, Bélgica y Grecia…',
+      source: 'La Voz del Interior',
+      href: 'https://www.lavoz.com.ar/espectaculos/musica/bi-el-cuarteto-que-abraza-la-cancion-instrumental-con-melodias-y-armonias-cercanas-al-oido/',
     },
     {
-      date: 'Mayo 2023',
-      title: '"Marco Wong"',
-      description: 'Simple, pieza referente de su propuesta sonora.',
+      quote:
+        '...lo que podemos ofrecer nosotros desde nuestra música, es un espacio y un tiempo de escucha con tranquilidad y sin requisitos previos en cuanto a conocer algo, mucho o poco del género…',
+      source: 'Enfant Terrible - Córdoba Cultura',
+      href: 'https://enfantterrible.com.ar/cultura/bi-casi-jazz-centro-cultural-cordoba/',
     },
     {
-      date: 'Febrero 2024',
-      title: '"B4" (sesión en vivo)',
-      description:
-        'Grabación y lanzamiento de una sesión en vivo de tres temas, reflejando la sonoridad en directo del formato cuarteto.',
-    },
-    {
-      date: '2023–2024',
-      title: 'Giras internacionales',
-      description: 'Presentaciones en Chile y Europa.',
+      quote:
+        '...la banda nacida en Córdoba consolida una propuesta sonora única y fresca, con composiciones originales que ellos mismos definen irónicamente como "Casi Jazz"...',
+      source: 'La Nueva Mañana - Córdoba',
+      href: 'https://lmdiario.com.ar/contenido/494068/crecimento-e-identidad-bi-regresa-a-cordoba-con-su-casi-jazz-y-se-presenta-en-el',
     },
   ],
 }
 
-export const spotify = {
-  heading: 'Música',
-  intro: 'Escuchá los lanzamientos de BI.',
-  tracks: [
-    {
-      type: 'track',
-      id: '7I4LNR0SfiWaEWeP6BxDIc',
-      label: 'Al menos hoy',
-    },
-    {
-      type: 'track',
-      id: '47uEjgMeUZ1vNgQCWVuPow',
-      label: 'Marco Wong',
-    },
-    {
-      type: 'album',
-      id: '0cgY8xYdr86jeB3dPPTlDE',
-      label: 'B4 (En vivo)',
-    },
+export const audiovisual = {
+  heading: 'Contenido audiovisual',
+  intro: 'Mirá y escuchá lo último de BI.',
+  spotifyAlbum: {
+    type: 'album',
+    id: '0cgY8xYdr86jeB3dPPTlDE',
+    label: 'B4 (En vivo)',
+  },
+  videos: [
+    { id: 'cCVctSUA4mk', title: 'Al menos hoy' },
+    { id: 'AasrkvOJFPQ', title: 'Marco Wong' },
+    { id: 'GOSlbhIkGTw', title: 'Juan y medio (sesión en vivo)' },
   ],
+}
+
+export const gallery = {
+  heading: 'Galería',
+  // TODO: reemplazar por fotos reales de la banda.
+  intro: 'Un vistazo detrás de escena.',
 }
 
 const WHATSAPP_NUMBER = '5493515135478'
@@ -99,11 +112,14 @@ const WHATSAPP_MESSAGE = 'Hola! Quería consultarles por BI.'
 
 export const social = {
   instagram: {
-    href: 'https://instagram.com/b.musica',
-    handle: '@b.musica',
+    href: 'https://instagram.com/tercerarte',
+    handle: '@tercerarte',
+  },
+  youtube: {
+    href: 'https://www.youtube.com/channel/UC0MTjJIcqnrI6yCrWFLTmvg',
   },
   spotify: {
-    href: `https://open.spotify.com/intl-es/album/${spotify.tracks[2].id}`,
+    href: `https://open.spotify.com/intl-es/album/${audiovisual.spotifyAlbum.id}`,
   },
   whatsapp: {
     href: `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`,
