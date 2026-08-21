@@ -1,13 +1,23 @@
 import Section from '../layout/Section.jsx'
 import RevealOnScroll from '../ui/RevealOnScroll.jsx'
-import integrantes from '../../assets/integrantes.png'
+import integrantes from '../../assets/image00002.jpeg'
 import { band } from '../../content.js'
 
 export default function Band() {
   return (
-    <Section id="banda" headingId="banda-heading" bg="paper">
-      <div className="grid gap-12 md:grid-cols-2 md:items-center md:gap-16">
-        <RevealOnScroll>
+    <Section id="shows" headingId="shows-heading" bg="paper">
+      <RevealOnScroll>
+        <h2
+          id="shows-heading"
+          className="font-serif text-3xl font-medium text-ink md:text-4xl"
+        >
+          {band.heading}
+        </h2>
+        <p className="mt-3 max-w-xl text-lg text-ink-soft">{band.intro}</p>
+      </RevealOnScroll>
+
+      <div className="mt-12 grid gap-12 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] md:items-start md:gap-16">
+        <RevealOnScroll className="md:sticky md:top-28">
           <img
             src={integrantes}
             alt={band.photoAlt}
@@ -16,35 +26,25 @@ export default function Band() {
           />
         </RevealOnScroll>
 
-        <div>
-          <RevealOnScroll>
-            <h2
-              id="banda-heading"
-              className="font-serif text-3xl font-medium text-ink md:text-4xl"
+        <ol className="relative flex flex-col gap-8 border-l-2 border-ochre/40 pl-8">
+          {band.shows.map((show, index) => (
+            <RevealOnScroll
+              key={`${show.date}-${show.place}`}
+              as="li"
+              delay={(index % 5) * 0.05}
+              className="relative"
             >
-              {band.heading}
-            </h2>
-            <p className="mt-3 text-lg text-ink-soft">{band.intro}</p>
-          </RevealOnScroll>
-
-          <ul className="mt-8 flex flex-col gap-4">
-            {band.members.map((member, index) => (
-              <RevealOnScroll
-                key={member.name}
-                delay={0.06 * index}
-                as="li"
-                className="flex items-center justify-between border-b border-ink/10 pb-4"
-              >
-                <span className="font-serif text-xl text-ink">
-                  {member.name}
-                </span>
-                <span className="text-sm font-medium uppercase tracking-wide text-ochre-dark">
-                  {member.role}
-                </span>
-              </RevealOnScroll>
-            ))}
-          </ul>
-        </div>
+              <span
+                aria-hidden="true"
+                className="absolute -left-[2.55rem] top-1 h-3 w-3 rounded-full bg-terracotta ring-4 ring-paper"
+              />
+              <span className="font-sans text-sm font-semibold uppercase tracking-wide text-terracotta-dark">
+                {show.date}
+              </span>
+              <p className="mt-1 font-serif text-xl text-ink">{show.place}</p>
+            </RevealOnScroll>
+          ))}
+        </ol>
       </div>
     </Section>
   )

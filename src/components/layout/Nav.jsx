@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Badge from '../ui/Badge.jsx'
 import Button from '../ui/Button.jsx'
-import { nav, hero, site } from '../../content.js'
+import { nav, hero } from '../../content.js'
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
@@ -25,13 +25,6 @@ export default function Nav() {
           className="flex items-center gap-3 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
         >
           <Badge size="sm" />
-          <span
-            className={`font-serif text-lg font-medium transition-colors duration-300 ${
-              scrolled ? 'text-ink' : 'text-cream'
-            }`}
-          >
-            {site.name}
-          </span>
         </a>
 
         <nav

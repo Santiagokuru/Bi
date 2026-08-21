@@ -3,6 +3,7 @@ import Button from '../ui/Button.jsx'
 import InstagramIcon from '../ui/icons/InstagramIcon.jsx'
 import SpotifyIcon from '../ui/icons/SpotifyIcon.jsx'
 import WhatsAppIcon from '../ui/icons/WhatsAppIcon.jsx'
+import YouTubeIcon from '../ui/icons/YouTubeIcon.jsx'
 import { site, social, contact } from '../../content.js'
 
 export default function Footer() {
@@ -59,6 +60,15 @@ export default function Footer() {
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-cream/25 text-cream transition-colors hover:border-ochre hover:text-ochre focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ochre focus-visible:ring-offset-2 focus-visible:ring-offset-brown"
               >
                 <SpotifyIcon />
+              </a>
+              <a
+                href={social.youtube.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir canal de YouTube de BI"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-cream/25 text-cream transition-colors hover:border-ochre hover:text-ochre focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ochre focus-visible:ring-offset-2 focus-visible:ring-offset-brown"
+              >
+                <YouTubeIcon />
               </a>
             </div>
           </div>
