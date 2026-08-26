@@ -84,7 +84,7 @@ export default function Hero() {
         <img
           src={heroPhoto}
           alt="Los integrantes de BI en el bosque"
-          className="aspect-[4/3] w-full rounded-3xl object-cover md:mt-8"
+          className="mt-12 aspect-[4/3] w-full rounded-3xl object-cover"
           loading="eager"
         />
 
