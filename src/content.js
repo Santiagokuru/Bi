@@ -117,8 +117,11 @@ export const gallery = {
   intro: 'Un vistazo detrás de escena.',
 }
 
-const WHATSAPP_NUMBER = '5493515135478'
+const WHATSAPP_NUMBER = '5493512107330'
 const WHATSAPP_MESSAGE = 'Hola! Quería consultarles por BI.'
+
+const CONTACT_EMAIL = 'brobimusic@gmail.com'
+const EMAIL_SUBJECT = 'Consulta desde la web de BI'
 
 export const social = {
   instagram: {
@@ -129,11 +132,15 @@ export const social = {
     href: 'https://www.youtube.com/@bi.musica',
   },
   spotify: {
-    href: `https://open.spotify.com/intl-es/album/${audiovisual.spotifyAlbum.id}`,
+    href: `https://open.spotify.com/intl-es/artist/7AUWqX5D2oMvC26gRE81kw`,
   },
   whatsapp: {
     href: `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`,
     label: 'Escribinos por WhatsApp',
+  },
+  email: {
+    href: `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(EMAIL_SUBJECT)}`,
+    label: 'Escribinos por mail',
   },
 }
 

@@ -1,6 +1,7 @@
 import Badge from '../ui/Badge.jsx'
 import Button from '../ui/Button.jsx'
 import InstagramIcon from '../ui/icons/InstagramIcon.jsx'
+import MailIcon from '../ui/icons/MailIcon.jsx'
 import SpotifyIcon from '../ui/icons/SpotifyIcon.jsx'
 import WhatsAppIcon from '../ui/icons/WhatsAppIcon.jsx'
 import YouTubeIcon from '../ui/icons/YouTubeIcon.jsx'
@@ -40,6 +41,15 @@ export default function Footer() {
             >
               <WhatsAppIcon className="h-5 w-5" />
               {social.whatsapp.label}
+            </Button>
+
+            <Button
+              href={social.email.href}
+              variant="outlineLight"
+              aria-label="Enviar un mail a BI"
+            >
+              <MailIcon className="h-5 w-5" />
+              {social.email.label}
             </Button>
 
             <div className="flex items-center gap-3">
