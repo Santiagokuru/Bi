@@ -46,24 +46,24 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             variants={container}
-            className="relative w-full max-w-6xl bg-cream px-6 py-8 lg:bg-transparent lg:px-10 lg:py-0 lg:pt-24"
+            className="relative w-full max-w-6xl bg-cream px-6 py-8 lg:max-w-7xl lg:bg-transparent lg:px-10 lg:py-0 lg:pt-24 xl:max-w-[90rem] xl:px-16 2xl:max-w-[100rem] 2xl:px-24"
           >
-            <div className="max-w-[18rem] sm:max-w-[23rem]">
+            <div className="max-w-[18rem] sm:max-w-[23rem] lg:max-w-sm xl:max-w-md">
               <motion.p
                 variants={item}
-                className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-dark lg:text-ochre-light lg:[text-shadow:0_2px_8px_rgb(0_0_0_/_70%)]"
+                className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-dark lg:text-sm lg:text-ochre-light lg:[text-shadow:0_2px_8px_rgb(0_0_0_/_70%)]"
               >
                 {hero.eyebrow}
               </motion.p>
               <motion.h1
                 variants={item}
-                className="mt-1 font-serif text-2xl font-medium leading-[1.1] text-ink lg:text-cream lg:[text-shadow:0_2px_12px_rgb(0_0_0_/_70%)]"
+                className="mt-1 font-serif text-2xl font-medium leading-[1.1] text-ink lg:mt-3 lg:text-4xl lg:text-cream lg:[text-shadow:0_2px_12px_rgb(0_0_0_/_70%)] xl:text-5xl"
               >
                 {hero.headline}
               </motion.h1>
               <motion.p
                 variants={item}
-                className="mt-2 max-w-[15rem] text-sm text-ink-soft lg:text-cream/90 lg:[text-shadow:0_2px_8px_rgb(0_0_0_/_70%)]"
+                className="mt-2 max-w-[15rem] text-sm text-ink-soft lg:mt-4 lg:max-w-sm lg:text-base lg:text-cream/90 lg:[text-shadow:0_2px_8px_rgb(0_0_0_/_70%)] xl:text-lg"
               >
                 {hero.subhead}
               </motion.p>
@@ -72,7 +72,7 @@ export default function Hero() {
                 src={albumCover}
                 alt={hero.coverAlt}
                 loading="eager"
-                className="mt-3 hidden h-36 w-36 rounded-xl object-cover shadow-xl shadow-brown-dark/50 ring-1 ring-cream/20 lg:block"
+                className="mt-3 hidden h-36 w-36 rounded-xl object-cover shadow-xl shadow-brown-dark/50 ring-1 ring-cream/20 lg:mt-6 lg:block lg:h-44 lg:w-44 xl:h-52 xl:w-52"
               />
             </div>
           </motion.div>
