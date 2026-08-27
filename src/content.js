@@ -52,9 +52,13 @@ export const band = {
     { date: '17/6', place: 'Festival de Jazz Alta Gracia - Córdoba' },
     { date: '19/7', place: 'Noche de Jazz - Villa Ciudad Parque - Córdoba' },
     { date: '9/8', place: 'Groovin Jazz Club - Rosario' },
-    { date: '3/10', place: 'Platz - Presentación Disco Relatos del Futuro' },
+    {
+      date: '3/10',
+      place: 'Platz - Presentación Disco Relatos del Futuro',
+      ticketUrl: 'https://www.antesala.com.ar/entrada/relatos-del-futuro-presentacion-de-disco',
+    },
     { date: '10/10', place: 'Casa Finzi - Valle Hermoso' },
-    { date: '6/11', place: 'Mendoza' },
+    { date: '6/11', place: 'Viña Rock - Mendoza' },
     { date: '7/11', place: 'Teatro Bicentenario - San Juan' },
     { date: '13/11', place: 'Centro Cultural Nuevo Uriarte - Buenos Aires' },
     { date: '15/11', place: 'Ciclo de Jazz de Tigre' },
@@ -76,6 +80,12 @@ export const press = {
         '...lo que podemos ofrecer nosotros desde nuestra música, es un espacio y un tiempo de escucha con tranquilidad y sin requisitos previos en cuanto a conocer algo, mucho o poco del género…',
       source: 'Enfant Terrible - Córdoba Cultura',
       href: 'https://enfantterrible.com.ar/cultura/bi-casi-jazz-centro-cultural-cordoba/',
+    },
+    {
+      quote:
+        '...De Córdoba a Europa: BI, la banda de “casi jazz” que tendrá 17 fechas en un menos de un mes...',
+      source: 'La voz del Interior - Córdoba',
+      shref: 'https://www.lavoz.com.ar/espectaculos/musica/de-cordoba-a-europa-bi-la-banda-de-casi-jazz-que-tendra-17-fechas-en-un-menos-de-un-mes/',
     },
     {
       quote:
@@ -112,11 +122,11 @@ const WHATSAPP_MESSAGE = 'Hola! Quería consultarles por BI.'
 
 export const social = {
   instagram: {
-    href: 'https://instagram.com/tercerarte',
-    handle: '@tercerarte',
+    href: 'https://www.instagram.com/bi.musica?igsi=MTZtMThwbmk3am82cA%3D%3D',
+    handle: '@bi.musica',
   },
   youtube: {
-    href: 'https://www.youtube.com/channel/UC0MTjJIcqnrI6yCrWFLTmvg',
+    href: 'https://www.youtube.com/@bi.musica',
   },
   spotify: {
     href: `https://open.spotify.com/intl-es/album/${audiovisual.spotifyAlbum.id}`,
