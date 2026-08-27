@@ -26,7 +26,7 @@ export const hero = {
 export const bio = {
   heading: 'Nosotros',
   paragraphs: [
-    'BI es un proyecto musical original liderado por los hermanos Horacio y Agustín Ravasi, junto a André Maurel en batería e Ismael Avecilla en saxofones.',
+    'BI es un proyecto musical original liderado por los hermanos Horacio y Agustín Ravasi, junto a André Maurel en batería e Ismael Avecilla en saxofón.',
     'Gestado desde la alegría del encuentro fraterno y el placer de compartir, predominan en su música la sencillez y claridad a nivel melódico en conjunción con ritmos y conceptos musicales que encuentran sus raíces en múltiples y variados estilos. La conjunción de estas influencias derivan en una música auto-denominada irónicamente por sus autores como Casi Jazz.',
     'Desde su primer trabajo fonográfico lanzado en 2022 (Al menos hoy) han mantenido una intensa actividad artística, destacando su participación en festivales de jazz a lo largo y ancho del país, así como en festivales internacionales en Chile; Uruguay y Grecia.'
   ],
@@ -99,16 +99,40 @@ export const press = {
 export const audiovisual = {
   heading: 'Contenido audiovisual',
   intro: 'Mirá y escuchá lo último de BI.',
-  spotifyAlbum: {
-    type: 'album',
-    id: '0cgY8xYdr86jeB3dPPTlDE',
-    label: 'B4 (En vivo)',
+  music: {
+    heading: 'Música',
+    eps: [
+      {
+        title: 'Al menos hoy (2022)',
+        file: 'Al menos hoy.webp',
+        href: 'https://open.spotify.com/intl-es/album/6hvlUC9jnG8ljX2ERGlDQA',
+      },
+      {
+        title: 'Marcos Wong (2023)',
+        file: 'Marcos Wong.webp',
+        href: 'https://open.spotify.com/intl-es/album/473SeBS7iMtXbejbuvXLOy',
+      },
+      {
+        title: 'B4 (2024)',
+        file: 'bi4.webp',
+        href: 'https://open.spotify.com/album/0cgY8xYdr86jeB3dPPTlDE',
+      },
+      {
+        title: 'Relatos del futuro (2026)',
+        file: 'Relatos del futuro.webp',
+        // TODO: reemplazar por el link de Spotify de "Relatos del futuro".
+        href: '#',
+      },
+    ],
   },
-  videos: [
-    { id: 'cCVctSUA4mk', title: 'Al menos hoy' },
-    { id: 'AasrkvOJFPQ', title: 'Marco Wong' },
-    { id: 'GOSlbhIkGTw', title: 'Juan y medio (sesión en vivo)' },
-  ],
+  videos: {
+    heading: 'Videos',
+    items: [
+      { id: 'cCVctSUA4mk', title: 'Al menos hoy' },
+      { id: 'AasrkvOJFPQ', title: 'Marco Wong' },
+      { id: 'GOSlbhIkGTw', title: 'Juan y medio (sesión en vivo)' },
+    ],
+  },
 }
 
 export const gallery = {
