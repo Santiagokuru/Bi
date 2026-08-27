@@ -32,16 +32,33 @@ export default function Band() {
               key={`${show.date}-${show.place}`}
               as="li"
               delay={(index % 5) * 0.05}
-              className="relative"
+              className={`relative ${
+                show.ticketUrl
+                  ? 'rounded-2xl bg-terracotta/5 p-4 -m-4 ring-1 ring-terracotta/15'
+                  : ''
+              }`}
             >
               <span
                 aria-hidden="true"
-                className="absolute -left-[2.55rem] top-1 h-3 w-3 rounded-full bg-terracotta ring-4 ring-paper"
+                className={`absolute -left-[2.55rem] top-1 h-3 w-3 rounded-full ring-4 ring-paper ${
+                  show.ticketUrl ? 'bg-terracotta ring-offset-0 animate-pulse' : 'bg-terracotta'
+                }`}
               />
               <span className="font-sans text-sm font-semibold uppercase tracking-wide text-terracotta-dark">
                 {show.date}
               </span>
               <p className="mt-1 font-serif text-xl text-ink">{show.place}</p>
+              {show.ticketUrl && (
+                <a
+                  href={show.ticketUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-terracotta px-4 py-1.5 font-sans text-sm font-semibold uppercase tracking-wide text-paper transition hover:bg-terracotta-dark"
+                >
+                  Comprar entradas
+                  <span aria-hidden="true">→</span>
+                </a>
+              )}
             </RevealOnScroll>
           ))}
         </ol>
