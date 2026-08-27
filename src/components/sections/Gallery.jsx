@@ -3,49 +3,18 @@ import Section from '../layout/Section.jsx'
 import RevealOnScroll from '../ui/RevealOnScroll.jsx'
 import { gallery } from '../../content.js'
 
-import img609 from '../../assets/galeria/20250529_AthensJazz_ThodorisMarkou_THM00609_3000px.jpg'
-import img191 from '../../assets/galeria/20250529_AthensJazz_ThodorisMarkou_THM00191_3000px.jpg'
-import img212 from '../../assets/galeria/20250529_AthensJazz_ThodorisMarkou_THM00212_3000px.jpg'
-import img221 from '../../assets/galeria/20250529_AthensJazz_ThodorisMarkou_THM00221_3000px.jpg'
-import img247 from '../../assets/galeria/20250529_AthensJazz_ThodorisMarkou_THM00247_3000px.jpg'
-import img259 from '../../assets/galeria/20250529_AthensJazz_ThodorisMarkou_THM00259_3000px.jpg'
-import img304 from '../../assets/galeria/20250529_AthensJazz_ThodorisMarkou_THM00304_3000px.jpg'
-import img315 from '../../assets/galeria/20250529_AthensJazz_ThodorisMarkou_THM00315_3000px.jpg'
-import bi1 from '../../assets/galeria/BI 1.jpg'
-import img00002 from '../../assets/galeria/image00002 - copia.jpeg'
-import img00031 from '../../assets/galeria/image00031.jpeg'
+const galleryImages = import.meta.glob('../../assets/galeria/*.webp', {
+  eager: true,
+  import: 'default',
+})
 
-import athenas1Video from '../../assets/galeria/Athenas 1.MP4'
-import athenas1Poster from '../../assets/galeria/Athenas 1-poster.jpg'
-import athenas2Video from '../../assets/galeria/Athenas 2.MP4'
-import athenas2Poster from '../../assets/galeria/Athenas 2-poster.jpg'
-import athenas4Video from '../../assets/galeria/Athenas 4.MP4'
-import athenas4Poster from '../../assets/galeria/Athenas 4-poster.jpg'
-import athens3Video from '../../assets/galeria/Athens 3.MP4'
-import athens3Poster from '../../assets/galeria/Athens 3-poster.jpg'
-import videoMain from '../../assets/galeria/Video.MP4'
-import videoMainPoster from '../../assets/galeria/Video-poster.jpg'
-
-const ATHENS_ALT = 'BI en vivo en el Athens Jazz Festival'
-
-const items = [
-  { type: 'image', src: img609, alt: ATHENS_ALT },
-  { type: 'video', src: athenas1Video, poster: athenas1Poster, alt: 'Video de BI en vivo en Atenas' },
-  { type: 'image', src: img191, alt: ATHENS_ALT },
-  { type: 'video', src: athenas2Video, poster: athenas2Poster, alt: 'Video de BI en vivo en Atenas' },
-  { type: 'image', src: img212, alt: ATHENS_ALT },
-  { type: 'video', src: athenas4Video, poster: athenas4Poster, alt: 'Video de BI en vivo en Atenas' },
-  { type: 'image', src: img221, alt: ATHENS_ALT },
-  { type: 'video', src: athens3Video, poster: athens3Poster, alt: 'Video de BI en vivo en Atenas' },
-  { type: 'image', src: img247, alt: ATHENS_ALT },
-  { type: 'video', src: videoMain, poster: videoMainPoster, alt: 'Video de BI en vivo' },
-  { type: 'image', src: img259, alt: ATHENS_ALT },
-  { type: 'image', src: img304, alt: ATHENS_ALT },
-  { type: 'image', src: img315, alt: ATHENS_ALT },
-  { type: 'image', src: bi1, alt: 'BI en la calle' },
-  { type: 'image', src: img00002, alt: 'BI en vivo' },
-  { type: 'image', src: img00031, alt: 'BI en vivo' },
-]
+const items = Object.keys(galleryImages)
+  .sort((a, b) => {
+    const numA = Number(a.match(/\((\d+)\)/)?.[1] ?? 0)
+    const numB = Number(b.match(/\((\d+)\)/)?.[1] ?? 0)
+    return numA - numB
+  })
+  .map((path) => ({ type: 'image', src: galleryImages[path], alt: 'BI en vivo' }))
 
 const INTERVAL_MS = 5000
 
