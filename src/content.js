@@ -113,7 +113,7 @@ export const audiovisual = {
         href: 'https://open.spotify.com/intl-es/album/473SeBS7iMtXbejbuvXLOy',
       },
       {
-        title: 'B4 (2024)',
+        title: 'Bi4 (2024)',
         file: 'bi4.webp',
         href: 'https://open.spotify.com/album/0cgY8xYdr86jeB3dPPTlDE',
       },
