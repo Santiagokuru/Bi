@@ -108,7 +108,7 @@ export const audiovisual = {
         href: 'https://open.spotify.com/intl-es/album/6hvlUC9jnG8ljX2ERGlDQA',
       },
       {
-        title: 'Marcos Wong (2023)',
+        title: 'Marco Wong (2023)',
         file: 'Marcos Wong.webp',
         href: 'https://open.spotify.com/intl-es/album/473SeBS7iMtXbejbuvXLOy',
       },
@@ -120,8 +120,7 @@ export const audiovisual = {
       {
         title: 'Relatos del futuro (2026)',
         file: 'Relatos del futuro.webp',
-        // TODO: reemplazar por el link de Spotify de "Relatos del futuro".
-        href: '#',
+        href: 'https://open.spotify.com/intl-es/album/0VVlQQnZzFT5pslqpXfsOR',
       },
     ],
   },
