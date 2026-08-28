@@ -1,6 +1,5 @@
 export const site = {
   name: 'BI',
-  tagline: 'Casi Jazz',
   lang: 'es',
 }
 
